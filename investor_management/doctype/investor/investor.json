@@ -1,0 +1,64 @@
+{
+    "doctype": "DocType",
+    "name": "Investor",
+    "module": "Investor Management",
+    "is_submittable": 0,
+    "autoname": "INV-.YYYY.-.#####",
+    "fields": [
+      {
+        "fieldname": "full_name",
+        "label": "Full Name",
+        "fieldtype": "Data",
+        "reqd": 1
+      },
+      {
+        "fieldname": "email",
+        "label": "Email",
+        "fieldtype": "Data",
+        "reqd": 1
+      },
+      {
+        "fieldname": "phone",
+        "label": "Phone",
+        "fieldtype": "Data"
+      },
+      {
+        "fieldname": "address",
+        "label": "Address",
+        "fieldtype": "Text Editor"
+      },
+      {
+        "fieldname": "investment_type",
+        "label": "Investment Type",
+        "fieldtype": "Select",
+        "options": "Warehouse\nOffice\nRetail",
+        "reqd": 1
+      },
+      {
+        "fieldname": "kyc_documents",
+        "label": "KYC Documents",
+        "fieldtype": "Table",
+        "options": "KYC Document"
+      },
+      {
+        "fieldname": "status",
+        "label": "Status",
+        "fieldtype": "Select",
+        "options": "New\nUnder Review\nApproved\nRejected",
+        "default": "New"
+      },
+      {
+        "fieldname": "rental_space",
+        "label": "Rental Space",
+        "fieldtype": "Link",
+        "options": "Rental Space"
+      }
+    ],
+    "permissions": [
+      {
+        "role": "System Manager",
+        "read": 1,
+        "write": 1
+      }
+    ]
+  }

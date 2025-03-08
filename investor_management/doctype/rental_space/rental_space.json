@@ -1,0 +1,33 @@
+{
+    "doctype": "DocType",
+    "name": "Rental Space",
+    "module": "Investor Management",
+    "autoname": "SPACE-.#####",
+    "fields": [
+      {
+        "fieldname": "space_type",
+        "label": "Space Type",
+        "fieldtype": "Select",
+        "options": "Warehouse\nOffice\nRetail",
+        "reqd": 1
+      },
+      {
+        "fieldname": "location",
+        "label": "Location",
+        "fieldtype": "Small Text"
+      },
+      {
+        "fieldname": "monthly_rent",
+        "label": "Monthly Rent",
+        "fieldtype": "Currency",
+        "reqd": 1
+      },
+      {
+        "fieldname": "status",
+        "label": "Status",
+        "fieldtype": "Select",
+        "options": "Available\nOccupied",
+        "default": "Available"
+      }
+    ]
+  }

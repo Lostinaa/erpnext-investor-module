@@ -1,0 +1,37 @@
+{
+    "doctype": "Web Form",
+    "title": "Investor Registration",
+    "route": "/investor-registration",
+    "doc_type": "Investor",
+    "show_list": 0,
+    "allow_delete": 0,
+    "allow_edit": 0,
+    "fields": [
+      {
+        "fieldname": "full_name",
+        "label": "Full Name",
+        "fieldtype": "Data",
+        "reqd": 1
+      },
+      {
+        "fieldname": "email",
+        "label": "Email",
+        "fieldtype": "Data",
+        "reqd": 1
+      },
+      {
+        "fieldname": "investment_type",
+        "label": "Investment Type",
+        "fieldtype": "Select",
+        "options": "Warehouse\nOffice\nRetail",
+        "reqd": 1
+      },
+      {
+        "fieldname": "kyc_documents",
+        "label": "KYC Documents",
+        "fieldtype": "Table",
+        "options": "KYC Document"
+      }
+    ],
+    "success_message": "Thank you for registering! Your Investor ID will be emailed to you."
+  }

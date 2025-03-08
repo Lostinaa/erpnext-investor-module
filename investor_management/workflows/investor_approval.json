@@ -1,0 +1,47 @@
+{
+    "workflow_name": "Investor Approval Workflow",
+    "document_type": "Investor",
+    "is_active": 1,
+    "states": [
+      {
+        "state": "New",
+        "doc_status": "0",
+        "style": "Primary"
+      },
+      {
+        "state": "Under Review",
+        "doc_status": "0",
+        "style": "Warning"
+      },
+      {
+        "state": "Approved",
+        "doc_status": "1",
+        "style": "Success"
+      },
+      {
+        "state": "Rejected",
+        "doc_status": "1",
+        "style": "Danger"
+      }
+    ],
+    "transitions": [
+      {
+        "state": "New",
+        "action": "Submit for Review",
+        "next_state": "Under Review",
+        "allowed_roles": ["System User"]
+      },
+      {
+        "state": "Under Review",
+        "action": "Approve",
+        "next_state": "Approved",
+        "allowed_roles": ["Investor Manager"]
+      },
+      {
+        "state": "Under Review",
+        "action": "Reject",
+        "next_state": "Rejected",
+        "allowed_roles": ["Investor Manager"]
+      }
+    ]
+  }
