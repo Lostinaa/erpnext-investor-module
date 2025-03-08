@@ -1,0 +1,27 @@
+# Frappe/ERPNext Specific
+/env/
+/sites/
+/logs/
+/config/
+/node_modules/
+/backups/
+/bench/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Database
+*.sqlite
+*.dump
+
+# Temporary Files
+*.tmp
+*.bak
